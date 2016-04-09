@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawerlayout"
+        android:background="@color/windowBackground"
+        >
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentholder"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"></LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/n2"
+                android:layout_gravity="center_horizontal|top" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"></LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/blood_login"
+                android:layout_gravity="center_horizontal|top" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="0.59">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="35dp"
+                    android:text="อีเมล์/ชื่อผู้ใช้ : "
+                    android:textColor="@color/navigationBarColor"
+                    android:id="@+id/textView1"
+                    android:layout_gravity="left|bottom" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textSize="30dp"
+                    android:ems="10"
+                    android:id="@+id/et_email"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_weight="0.05"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="35dp"
+                    android:text="รหัสผ่าน : "
+                    android:textColor="@color/navigationBarColor"
+                    android:id="@+id/textView2" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="30dp"
+                    android:ems="10"
+                    android:id="@+id/et_pass"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.20"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <Button
+                    android:layout_width="147dp"
+                    android:layout_height="60dp"
+                    android:background="@color/colorButton"
+                    android:text="เข้าสู่ระบบ"
+                    android:textSize="30dp"
+                    android:id="@+id/btn_login"
+                    android:onClick="onButtonClick"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="71dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <Button
+                    android:layout_width="154dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorButton"
+                    android:text="ลงทะเบียน"
+                    android:textSize="30dp"
+                    android:id="@+id/btn_register"
+                    android:onClick="onButtonClick"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navlist"
+        android:background="#dedede"
+        android:layout_gravity="start"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navlist2"
+        android:background="#dedede"
+        android:layout_gravity="end"
+        />
+
+
+    </android.support.v4.widget.DrawerLayout>

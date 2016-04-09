@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerlayout"
+    android:background="@color/windowBackground">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentholder"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="ชื่อ - สกุล"
+                android:id="@+id/tvName"
+                android:layout_gravity="left|top" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayColor"
+                android:textSize="25dp"
+                android:id="@+id/etName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="อายุ"
+                android:id="@+id/tvAge"
+                android:layout_gravity="left|top" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayColor"
+                android:textSize="25dp"
+                android:id="@+id/etAge" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="เพศ"
+                android:id="@+id/tvSex"
+                android:layout_gravity="left|top" />
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/r_sex">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ชาย"
+                    android:id="@+id/radioMale"
+                    android:textColor="@color/grayColor"
+                    android:textSize="25dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="69dp"
+                    android:layout_height="64dp"></LinearLayout>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="หญิง"
+                    android:id="@+id/radioFemale"
+                    android:textColor="@color/grayColor"
+                    android:textSize="25dp"/>
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="น้ำหนัก"
+                android:id="@+id/tvWeight"
+                android:layout_gravity="left|top" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayColor"
+                android:textSize="25dp"
+                android:id="@+id/etWeight" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="ส่วนสูง"
+                android:id="@+id/tvHeight"
+                android:layout_gravity="left|top" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayColor"
+                android:textSize="25dp"
+                android:id="@+id/etHeight" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="ระดับอาการ"
+                android:id="@+id/tvLevel"
+                android:layout_gravity="left|top" />
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/r_level">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="พึ่งอินซูลิน"
+                    android:id="@+id/radioIn"
+                    android:textColor="@color/grayColor"
+                    android:textSize="25dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="69dp"
+                    android:layout_height="64dp"></LinearLayout>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ไม่พึ่งอินซูลิน"
+                    android:id="@+id/radioNo"
+                    android:textColor="@color/grayColor"
+                    android:textSize="25dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="อีเมล์"
+                android:id="@+id/tvEmail"
+                android:layout_gravity="left|top" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayColor"
+                android:textSize="25dp"
+                android:id="@+id/etEmail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="ชื่อผู้เข้าใช้"
+                android:id="@+id/tvUser"
+                android:layout_gravity="left|top" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayColor"
+                android:textSize="25dp"
+                android:id="@+id/etUser" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="รหัสผ่าน"
+                android:id="@+id/tvPass"
+                android:layout_gravity="left|top" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayColor"
+                android:textSize="25dp"
+                android:id="@+id/etPass" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="ยืนยันรหัสผ่าน"
+                android:id="@+id/tvConfirm"
+                android:layout_gravity="left|top" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayColor"
+                android:textSize="25dp"
+                android:id="@+id/etConfirm" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"></LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/windowBackground"
+                android:text="ลงทะเบียน"
+                android:textSize="25dp"
+                android:id="@+id/btn_register2"
+                android:layout_gravity="center"
+                android:onClick="onSignUpClick"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navlist"
+        android:background="#dedede"
+        android:layout_gravity="start"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navlist2"
+        android:background="#dedede"
+        android:layout_gravity="end"
+        />
+
+</android.support.v4.widget.DrawerLayout>
+
+

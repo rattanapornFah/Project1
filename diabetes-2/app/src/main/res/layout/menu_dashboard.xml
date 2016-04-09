@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorButton1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="500dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="16dp"
+                                android:text="บันทึกอาการ"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="23sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/img_record"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:layout_marginTop="32dp"
+                                android:indeterminate="false"
+                                android:src="@drawable/record_icon1"
+                                android:onClick="onClickRecord"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:background="#fff"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="16dp"
+                                android:text="แจ้งเตือน"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="23sp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+                                android:id="@+id/img_clock"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:layout_marginTop="32dp"
+                                android:indeterminate="false"
+                                android:src="@drawable/clock_icon2"
+                                android:onClick="onClickAlert"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="500dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="16dp"
+                                android:text="คำนวณน้ำตาล"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="23sp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+                                android:id="@+id/img_cal"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:layout_marginTop="26dp"
+                                android:indeterminate="false"
+                                android:src="@drawable/calculate_icon" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                             >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="16dp"
+                                android:text="สาระน่ารู้"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="23sp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+                                android:id="@+id/img_news"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:layout_marginTop="26dp"
+                                android:indeterminate="false"
+                                android:src="@drawable/news_icon" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TimePicker
+        android:id="@+id/picker"
+        android:layout_width="fill_parent"
+        android:layout_height="380dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></LinearLayout>
+
+    <CheckBox
+        android:id="@+id/optrepeat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Repeat every 1 hour"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></LinearLayout>
+
+    <Button
+        android:id="@+id/startSetDialog"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Set Target Time"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></LinearLayout>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Cancel Alarm"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/alarmprompt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/grayColor"/>
+
+</LinearLayout>

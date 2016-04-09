@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground2">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/im_clock"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ck"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorButton2"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_pill"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="แจ้งเตือนทานยา"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="30dp"
+            android:onClick="onClickAlertPill"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorButton2"></LinearLayout>
+
+        <Button
+            android:id="@+id/btn_doctor"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="แจ้งเตือนพบแพทย์"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="30dp"
+            android:onClick="onClickDoctor"
+            />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorButton2"></LinearLayout>
+
+</LinearLayout>

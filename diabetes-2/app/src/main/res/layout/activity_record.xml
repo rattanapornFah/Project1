@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground2">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"></LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET TIME"
+        android:id="@+id/button"
+        android:background="@color/colorButton"
+        android:textSize="30dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grayColor"
+        android:textSize="25dp"
+        android:id="@+id/tvTime"
+        android:layout_below="@+id/button"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET DATE"
+        android:id="@+id/button2"
+        android:background="@color/colorButton"
+        android:textSize="30dp"
+        android:layout_gravity="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grayColor"
+        android:textSize="25dp"
+        android:id="@+id/tvDate"
+        android:layout_below="@+id/button2"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ความดันโลหิต"
+            android:id="@+id/tv_1"
+            android:textColor="@color/navigationBarColor"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et1"
+            android:layout_weight="0.31"
+            android:textColor="@color/grayColor"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="มม.ปรอท"
+            android:id="@+id/tv1"
+            android:textColor="@color/navigationBarColor"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ระดับน้ำตาลในเลือด"
+            android:id="@+id/tv_2"
+            android:textColor="@color/navigationBarColor"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et2"
+            android:layout_weight="0.31"
+            android:textColor="@color/grayColor"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ม.ก./ดล."
+            android:id="@+id/tv2"
+            android:textColor="@color/navigationBarColor"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="คอลเลสเตอรอล"
+            android:id="@+id/tv_3"
+            android:textColor="@color/navigationBarColor"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et3"
+            android:layout_weight="0.31"
+            android:textColor="@color/grayColor"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ม.ก./ดล."
+            android:id="@+id/tv3"
+            android:textColor="@color/navigationBarColor"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="น้ำหนัก"
+                android:id="@+id/tv_4"
+                android:textColor="@color/navigationBarColor"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et4"
+                android:layout_weight="0.31"
+                android:textColor="@color/grayColor"
+                android:textSize="25dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="กก."
+                android:id="@+id/tv4"
+                android:textColor="@color/navigationBarColor"
+                android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="บันทึก"
+        android:id="@+id/btn_save"
+        android:background="@color/colorButton"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:onClick="onSaveClick"/>
+
+
+</LinearLayout>
